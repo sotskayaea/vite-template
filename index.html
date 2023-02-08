@@ -2,68 +2,177 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite-template/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/vite-template/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/vite-template/assets/index-66886d44.css">
+    <link rel="stylesheet" href="/vite-template/assets/index-38c03d33.css">
   </head>
   <body>
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/vite-template/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
+    <header class="header-section">
+  <div class="container header-wrapper">
+    <nav class="header-nav">
+      <a class="logo-link link" href="index.html">
+        <svg class="logo-icon" width="66" height="52">
+          <use href="../img/icons.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <ul class="nav-list list">
+        <li class="nav-item">
+          <a class="nav-link current-link link" href="Home">Home</a>
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
+        <li class="nav-item">
+          <a class="nav-link link" href="About">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link" href="Service">Service</a>
+        </li>
+        <li class="nav-item"><a class="nav-link link" href="Menu">Menu</a></li>
+        <li class="nav-item">
+          <a class="nav-link link" href="Contact">Contact</a>
         </li>
       </ul>
+    </nav>
+    <div class="btn-wrapper">
+      <button class="btn header-btn" type="button">Order Now</button>
     </div>
+  </div>
+</header>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/vite-template/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
+    <!-- Loads the specified .html file -->
+    <main>
+      <section class="hero-section">
+  <div class="container hero-container">
+    <div class="hero-text-container">
+      <h1 class="hero-title animate__zoomIn animate__animated">
+        Enjoy Your Favorite Food From Anywhere
+      </h1>
+      <p class="hero-desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
+      <button class="hero-btn btn" type="button">Order Now</button>
     </div>
   </div>
 </section>
 
+      <section class="offerings-section">
+  <div class="container offerings-wrap">
+    <div class="offerings-right-wrap">
+      <h2 class="offerings-title">What’s Special About Our Offerings</h2>
+      <p class="offerings-desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
+      <ul class="offerings-list list">
+        <li class="offerings-item">
+          <div class="offerings-icon-wrap">
+            <svg class="offerings-icon">
+              <use href="../img/icons.svg#icon-rocket"></use>
+            </svg>
+          </div>
+          <h3 class="offerings-subtitle">Fasest Delivery</h3>
+          <p class="offerings-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+        <li class="offerings-item">
+          <div class="offerings-icon-wrap">
+            <svg class="offerings-icon">
+              <use href="../img/icons.svg#icon-touch"></use>
+            </svg>
+          </div>
+          <h3 class="offerings-subtitle">Easy To Order</h3>
+          <p class="offerings-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+      </ul>
+      <button class="btn offerings-btn" type="button">Order Now</button>
+    </div>
+  </div>
+</section>
+
+      <section class="favorites-section">
+  <div class="container">
+    <h2 class="favorites-title">Some of Our Favorites</h2>
+    <p class="favorites-desc">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <ul class="favorites-list list">
+      <li class="favorites-item">
+        <img
+          class="favorites-img animate__animated animate__rotateIn"
+          src="/vite-template/assets/gamburger-a3ab5716.jpg"
+          alt="gamburger"
+          width="315"
+          height="315"
+        />
+      </li>
+      <li class="favorites-item">
+        <img
+          class="favorites-img animate__animated animate__rotateIn"
+          src="/vite-template/assets/pasta-efd35cb3.jpg"
+          alt="pasta"
+          width="315"
+          height="315"
+        />
+      </li>
+      <li class="favorites-item">
+        <img
+          class="favorites-img animate__animated animate__rotateIn"
+          src="/vite-template/assets/pizza-5ea8f7e5.jpg"
+          alt="pizza"
+          width="315"
+          height="315"
+        />
+      </li>
+      <li class="favorites-item">
+        <img
+          class="favorites-img animate__animated animate__rotateIn"
+          src="/vite-template/assets/chicken-e7bd2eb8.jpg"
+          alt="chicken"
+          width="315"
+          height="315"
+        />
+      </li>
+      <li class="favorites-item">
+        <img
+          class="favorites-img animate__animated animate__rotateIn"
+          src="/vite-template/assets/salat-83933e72.jpg"
+          alt="salat"
+          width="315"
+          height="315"
+        />
+      </li>
+      <li class="favorites-item">
+        <img
+          class="favorites-img animate__animated animate__rotateIn"
+          src="/vite-template/assets/borshch-4a9ff4f0.jpg"
+          alt="borshch"
+          width="315"
+          height="315"
+        />
+      </li>
+    </ul>
+  </div>
+</section>
+
+    </main>
 
     
   </body>
