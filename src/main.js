@@ -1,1 +1,2 @@
-import 'animate.css';
+// import 'animate.css';
+import './js/modal.js';

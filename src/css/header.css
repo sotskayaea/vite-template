@@ -1,5 +1,11 @@
 .header-section{
+    position: fixed;
+    /* top: -1px; */
+    width: 100%;
+    background-color: aqua;
     box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+    z-index: 1000;
+
 }
 
 .logo-link{
