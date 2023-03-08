@@ -15,8 +15,8 @@
     />
     <title>Vanilla App Template</title>
     
-    <script type="module" crossorigin src="/vite-template/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/vite-template/assets/index-b0e01ad1.css">
+    <script type="module" crossorigin src="/vite-template/assets/index-03f5ebd9.js"></script>
+    <link rel="stylesheet" href="/vite-template/assets/index-865a9142.css">
   </head>
   <body>
     <header class="header-section">
@@ -62,7 +62,9 @@
         varius enim in eros elementum tristique. Duis cursus, mi quis viverra
         ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
       </p>
-      <button class="hero-btn btn" type="button">Order Now</button>
+      <button class="hero-btn btn" type="button" data-modal-open>
+        Order Now
+      </button>
     </div>
   </div>
 </section>
@@ -171,6 +173,16 @@
     </ul>
   </div>
 </section>
+
+      <div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="close-button button" type="button" data-modal-close>
+      <svg class="close-icon">
+        <use href="/src/images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+</div>
 
     </main>
 
