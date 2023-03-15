@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
       Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
   var modalButtons = document.querySelectorAll('.js-open-modal'),
     overlay = document.querySelector('.js-overlay-modal'),
+    forma = document.querySelector('.modal-form'),
     closeButtons = document.querySelectorAll('.js-modal-close');
 
   /* Перебираем массив кнопок */
@@ -61,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
+      forma.reset();
     });
   }); // end foreach
 
